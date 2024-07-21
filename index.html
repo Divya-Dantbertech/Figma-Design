@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard HR Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <div class="outer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="82" width="45" viewBox="0 0 384 512">
+                        <path fill="#5932EA"
+                            d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
+                    </svg>
+                </div>
+                <div class="inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="38" width="50"
+                        style="position: relative; top: -2.80px;" viewBox="0 0 385 512">
+                        <path fill="#16C098"
+                            d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
+                    </svg>
+                    <!--Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#74C0FC"
+                        d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
+                    </svg>
+                    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#63E6BE"
+                        d="M329.1 142.9c-62.5-62.5-155.8-62.5-218.3 0s-62.5 163.8 0 226.3s155.8 62.5 218.3 0c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3c-87.5 87.5-221.3 87.5-308.8 0s-87.5-229.3 0-316.8s221.3-87.5 308.8 0c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0z" />
+                    </svg>
+                </div>
+                <span class="text1">Circle </span>
+                <span class="text2">Soft </span>
+            </div>
+        </div>
+        <div class="search-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+            <span class="bi bi-search">Search...</span>
+        </div>
+        <div class="bell-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+            </svg>
+            <div class="red-dot" id="red-dot"></div>
+        </div>
+        </div>
+        </div>
+    </nav>
+    <!-- SIDEBAR -->
+    <aside>
+        <section id="sidebar">
+            <a href="#" class="brand link-underline-light">
+                <img src="/image/pic.png" alt="photo">
+                <span class="orrect itc text-dark  text-wrap badge" style="width: 6rem; font-weight: bold;">
+                    Gavano
+                    <span style="display: block; color:#A4A4A4;">HR Manager</span>
+                </span>
+
+                <a href="#" class="fw-bold text-dark fs-4 link-underline-light">...</a>
+            </a>
+            <ul class="side-menu top">
+                <li class="active">
+                    <a href="#" class="link-underline-light">
+                        <img src="/image/dashboard.png">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-underline-light">
+                        <img src="/image/chart-square.png">
+                        <i class='bx bxs-chart-square'></i>
+                        <span class="text">Finance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-underline-light">
+                        <img src="/image/personalcard.png">
+                        <i class='bx bxs-doughut-chart'></i>
+                        <span class="text">Emplyoyees</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-underline-light">
+                        <img src="/image/briefcase.png">
+                        <i class='bx bxs-briefcase'></i>
+                        <span class="text">Company</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-underline-light">
+                        <img src="/image/user-square.png">
+                        <i class='bx bxs-group'></i>
+                        <span class="text">Candidate</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-underline-light">
+                        <img src="/image/calendar.png">
+                        <i class='bx bxs-calender'></i>
+                        <span class="text">Calender</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="side-menu ">
+                <li>
+                    <a href="#" class="link-underline-light">
+                        <img src="/image/frame.png">
+                        <i class='bx bxs-profile'></i>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-underline-light">
+                        <img src="/image/setting-2.png">
+                        <i class='bx bxs-cog'></i>
+                        <span class="text">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <!--  END OF SIDEBAR -->
+    <main>
+        <div class="info-data">
+            <div class="card" style="margin-inline: -112px">
+                <div class="head">
+                    <div>
+                        <h5>Total Employees</h5>
+                        <h3>856</h3>
+                        <p>Employee</p>
+                    </div>
+                    <div class="label">
+                        <img src="https://img.icons8.com/pastel-glyph/64/chart-arrow-rise.png" alt="Upward Trend Icon"
+                            class="icon" />
+                        10.0%
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-inline: -99px;">
+                <div class="head">
+                    <div>
+                        <h5>Job View</h5>
+                        <h3>3,342</h3>
+                        <p>Viewers</p>
+                    </div>
+                    <div class="label">
+                        <img src="https://img.icons8.com/pastel-glyph/64/chart-arrow-rise.png" alt="Upward Trend Icon"
+                            class="icon" />
+                        22.0%
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-inline: -83px;">
+                <div class="head">
+                    <div>
+                        <h5>Job Applied</h5>
+                        <h3>77</h3>
+                        <p>Applicant</p>
+                    </div>
+                    <div class="label">
+                        <img src="https://img.icons8.com/pastel-glyph/64/chart-arrow-rise.png" alt="Upward Trend Icon"
+                            class="icon" />
+                        12.0%
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-inline: -76px;">
+                <div class="head">
+                    <div>
+                        <h5>Resigned Employess</h5>
+                        <h3>17</h3>
+                        <p>Employee</p>
+                    </div>
+                    <div class="label1">
+                        <img src="https://img.icons8.com/pastel-glyph/64/chart-arrow-rise.png" alt="downward Trend Icon"
+                            class="icon-downward" />
+                        7.0%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- charts -->
+    <div class="chart-container">
+        <h2 class="chart-title"></h2>
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #f2f2f2;"></div>
+            </div>
+            <div class="legend-item">
+                <div class="dropdown">
+                    <button class="dropbtn">This Month <span class="arrow">&#9662;</span></button>
+                    <div class="dropdown-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas id="miChart" width="700" height="240" left="314" margin-top="309" border-radius="8px"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </chart>
+    <!--boxs--->
+    <rectangle>
+        <div class="row flex-grow">
+            <div class="col-8 grid-margin stretch-card">
+                <div class="card card-rounded">
+                    <div class="card-body">
+                        <div class="d-sm-flex justify-content-between align-items-start">
+                            <div>
+                                <h4 class="card-title card-title-dash">Employees Status</h4>
+                            </div>
+                            <div>
+                                <div class="bg-light btn-lg text-primary mb-0 me-0">
+                                    <i class="mdi mdi-account-plus">Filter & short
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5M12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5M1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8m9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5m1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table select-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Employee Name</th>
+                                    <th>Department</th>
+                                    <th>Age</th>
+                                    <th>Disipline</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="/image/pic (2).png" alt="pic-1">
+                                            <div>
+                                                <h6>Justin Lipshutz</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Marketing</h6>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                                <h6>22</h6>
+                                            </div>
+                                    </td>
+                                    <td>
+                                        <h6>+100%</h6>
+                                    <td>
+                                        <div class="badge badge-opacity-warning text-success ">Permanent</div>
+                                    </td>
+                                </tr>
+                                <table class="table select-table">
+                                    <thead>
+                                    </thead>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex">
+                                                <img src="/image/Ellipse 33.png" alt="pic-2">
+                                                <div>
+                                                    <h6>Marcus Culhane</h6>
+                                                </div>
+                                        </td>
+                                        <td>
+                                            <h6>Finance</h6>
+                                        </td>
+                                        <td>
+                                            <h6>24</h6>
+                                        </td>
+                                        <td>
+                                            <h6>+95%</h6>
+                                  </div>
+                              </div>
+                        </div>
+                    </td>
+            <td>
+                <div class="badge badge-opacity-warning text-dark">Contract</div>
+            </td>
+            </tr>
+            <div class="table-responsive mt-1">
+                <table class="table select-table">
+                    <tbody>
+                    </tbody>
+                    <td>
+                        <div class="d-flex">
+                            <img src="/image/Group 239 (2).png" alt="pic-3">
+                            <div>
+                                <h6>Leo Stanton</h6>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <h6>R&D</h6>
+                    </td>
+                    <td>
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap">
+                                <h6>28</h6>
+                            </div>
+                        </div>
+            </div>
+            </td>
+            <td>
+                <h6>+89%</h6>
+            </td>
+            <td>
+                <div class="badge badge-opacity-warning text-success">Permanent</div>
+            </td>
+            </tr>
+            <!-- Additional rows omitted for brevity -->
+            </tbody>
+            </table>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </rectangle>
+    <!--pie charts -->
+    <box2>
+        <h2>Employee Composition</h2>
+        <canvas id="myChart" width="379" height="495"
+            style="display: block; box-sizing: border-box;  border-radius:9px; top: 630px;"
+            border-radius="1.81px"></canvas>
+        <div class="female">
+            <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" width="12.19"
+                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#B197FC"
+                        d="M160 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM88 384l-17.8 0c-10.9 0-18.6-10.7-15.2-21.1L93.3 248.1 59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l53.6-89.2c20.3-33.7 56.7-54.3 96-54.3l11.6 0c39.3 0 75.7 20.6 96 54.3l53.6 89.2c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9l-33.9-56.3L265 362.9c3.5 10.4-4.3 21.1-15.2 21.1L232 384l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96-16 0 0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96z" />
+                </svg></span>
+            <span class="percentage">35%</span>
+        </div>
+        <div class="male">
+            <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26.71" width="10.27"
+                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#63E6BE"
+                        d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z" />
+                </svg></span>
+            <span class="percentage">65%</span>
+        </div>
+        <p>856 employee total</p>
+    </box2>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
